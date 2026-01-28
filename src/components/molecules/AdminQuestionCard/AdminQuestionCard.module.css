@@ -1,0 +1,75 @@
+.option {
+	display: flex;
+	align-items: center;
+	height: max-content;
+}
+
+.option::hover {
+	background-color: antiquewhite;
+}
+
+.optionRow {
+	display: flex;
+	flex: 1;
+	align-items: center;
+}
+
+.optionlabel {
+	margin-right: 12px;
+	border: 1px solid var(--ion-color-dark);
+	width: 32px;
+	min-width: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 32px;
+	margin-top: 14px;
+	border-radius: 4px;
+}
+
+.deleteBtn {
+	height: 100%;
+	display: flex;
+}
+
+.numberButton {
+	width: 36px;
+	height: 36px;
+}
+
+.textInput {
+	margin: 0;
+}
+
+.bold {
+	font-weight: 400;
+	font-size: 14px;
+	width: 100%;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+}
+
+/* md */
+@media (min-width: 768px) {
+	.bold {
+		font-weight: 400;
+		font-size: 14px;
+		width: 200px;
+	}
+}
+/* lg */
+@media (min-width: 1024px) {
+	.bold {
+		font-weight: 400;
+		font-size: 14px;
+		width: 200px;
+	}
+	.buttons{
+		justify-content: flex-end;
+	}
+}

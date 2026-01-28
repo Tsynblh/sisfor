@@ -1,0 +1,28 @@
+.maincontainer{
+  display: flex;
+  -webkit-user-select:none;
+  user-select: none;
+  gap:8px;
+  align-items: flex-end;
+  /* background-color: bisque; */
+}
+
+.logoPicCtn{
+  display: flex;
+  align-items: flex;
+  min-width: 30px;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+.logopic{
+  height: 30px;
+}
+
+.logoText{
+  justify-content: center;
+  display: flex;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'Roboto',sans-serif;
+}

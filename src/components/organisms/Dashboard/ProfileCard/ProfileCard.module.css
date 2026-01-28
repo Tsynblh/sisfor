@@ -1,0 +1,136 @@
+.cardContent {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.button {
+  display: none;
+  width: 100%;
+  font-weight: 300;
+}
+
+.smButton{
+  display: block;
+}
+
+.handleGridDown {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.LeftSide {
+  min-width: max-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 32px;
+  transition: 500ms;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 25px;
+  transition: 200ms;
+}
+
+.aside {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  transition: 500ms;
+}
+
+/* md */
+@media (min-width: 640px) {
+  .cardContent {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 32px;
+  }
+  .handleGridDown {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .button {
+    display: none;
+    width: 200px;
+  }
+  
+.smButton{
+  display: block;
+  width: 50%;
+}
+
+  .LeftSide {
+    min-width: max-content;
+    width: 100%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  .aside {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .cardContent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .handleGridDown {
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
+
+  }
+
+  .LeftSide {
+    min-width: max-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .avatar {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  
+  .button {
+    display: block;
+    width: 240px;
+  }
+
+  .smButton{
+    display: none;
+  }
+  .aside {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+}

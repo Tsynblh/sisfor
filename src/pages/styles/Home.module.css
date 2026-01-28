@@ -1,0 +1,13 @@
+.mainExam {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.newCards {
+	width: auto;
+}
+.newCardsContent {
+	display: block;
+}
+.codeCard {
+	height: max-content;
+}
